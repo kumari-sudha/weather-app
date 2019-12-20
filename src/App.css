@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+.wrapper{
+    background-color: rgb(206, 97, 58);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    margin:auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* title container */
+.title-container{
+    background-image: url("https://raw.githubusercontent.com/hamza-mirza/react-weather-app/master/src/img/bg.jpg"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 50em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-right: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.weather-title{
+    font-size: 66px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-sub-title{
+    font-style: italic;
+    font-size: 32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Form container  */
+.form-weather-container{
+    background: #273648;
+}
+
+.form-container{
+    margin-top: 15%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.form-container input{
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(206, 97, 58);
+    margin-right: 5%;
+    font-size: 1.2em;
+    color: white;
+    outline: none;
+}
+
+input:focus,input:active{
+    outline: none;
+    background: none;
+}
+
+.form-container button{
+    background-color: rgb(206, 97, 58);
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 8px;
+}
+
+/* Weather information */
+.weather-container{
+    margin-left: 4%;
+    margin-top: 10%;
+}
+
+.weather-container-title{
+    color: rgb(206, 97, 58);
+    font-size: 2em;
+    font-family: fantasy;
+}
+
+.weather-container-info{
+    color: white;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5%;
 }
